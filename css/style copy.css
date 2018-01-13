@@ -1,0 +1,407 @@
+/* Reset CSS */
+
+/**
+ * Eric Meyer's Reset CSS v2.0 (http://meyerweb.com/eric/tools/css/reset/)
+ * http://cssreset.com
+ */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/* Font */
+
+
+@font-face {
+    font-family: 'eurostileregular';
+    src: url('eurostile-webfont.eot');
+    src: url('eurostile-webfont.eot?#iefix') format('embedded-opentype'),
+         url('eurostile-webfont.woff2') format('woff2'),
+         url('eurostile-webfont.woff') format('woff'),
+         url('eurostile-webfont.ttf') format('truetype'),
+         url('eurostile-webfont.svg#eurostileregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+/* vertical align */
+
+/*
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+*/
+
+
+/* navigation play */
+
+
+nav li {
+	display: block;
+	color: #ffffff;
+	background-color: #c0c0c0;
+	padding: 5px;
+	border-bottom: solid 2px #000000;
+}
+
+nav a {
+	color: #ffffff;
+}
+
+nav a:visited {
+	color: #ffffff;
+}
+
+
+#nav-collapse {
+	display: none;
+	color: #ffffff;
+	text-align: right;
+	width: 100%;
+	padding: .625em 0 .625em 0;
+}
+
+
+#nav-collapse.active {
+	display: block;
+}
+
+nav[role="navigation"] ul.hide{
+	display:none;
+}
+
+
+
+
+/* Portfolio CSS */
+
+body {
+	background: -webkit-linear-gradient(#99bfe0, #ffffff); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(#99bfe0, #ffffff); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(#99bfe0, #ffffff); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(#99bfe0, #ffffff); /* Standard syntax */
+	
+	font-family: "eurostileregular";
+}
+
+header {
+	background-color: #000000;
+	height: 25px;
+}
+
+header img {
+	height: 15px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+#head-social {
+	position: absolute;
+	top: 0px;
+	right: 10px;
+}
+
+
+li {
+	display: inline;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	color: #000000;
+}
+
+a:visited {
+	color: #000000;
+}
+
+#banner {
+	background-color: #747B82;
+	border-bottom: 10px solid #000000;
+	text-align: center;
+	height: 31.25%;
+	width: 100%;
+}
+
+#banner img {
+	background-color: #000000;
+	width: 35.9375%; /* 115/320 */
+/* 	height: 80px; */
+	padding-bottom: 10px;
+	padding-top: 10px;
+	padding-right: 20px;
+	padding-left: 20px;
+	margin-bottom: -5px;
+}
+
+#about-me {
+	text-align: center;
+	font-size: 1em;
+}
+
+#about-me img {
+	width: 200px /* 39.0625% */; /* 125/320 */
+	margin-top: 5px;
+	margin-bottom: 5px;
+}
+
+#about-text {
+	background-color: rgba(116,123,130,0.25);
+	color: #ffffff;
+	padding: 10px;
+	text-align: justify;
+}
+
+h1 {
+	background-color: #000000;
+	color: #ffffff;
+	height: 20px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	text-align: left;
+}
+
+#skills {
+	display: none;
+}
+
+.box {
+	background-color: rgba(116,123,130,0.25);
+	color: #000000;
+	width: 62.5%;  /* 200/320 */
+	height: 195px;
+	text-align: center;
+	font-size: 1em;	
+	margin: 10px auto 0px auto;
+}
+
+.box:last-child {
+	margin-bottom: 10px;
+}
+
+.box p {
+	padding-top: 5px;
+}
+
+.box img {
+	margin-top: -20px;
+/* 	@include vertical-align; */
+}
+
+#number {
+	margin-top: -45px;
+}
+
+footer {
+	background-color: #000000;
+	height: 25px;
+}
+
+
+/* 460 */
+
+@media (min-width: 460px) {
+
+.box {
+	width: 43.47826087%%;  /* 200/460 */
+	margin: 3.26086957%;
+	float: left;
+}
+
+h1 {
+	height: 20px;
+	padding-top: 5px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	text-align: left;
+	clear: both;
+}
+
+footer {
+	height: 25px;
+	clear: both;
+}
+
+
+}
+
+
+/* 640 */
+
+
+@media (min-width: 640px) {
+
+#banner {
+	border-bottom: 25px solid #000000;
+}
+
+#skills {
+	display: inherit;
+}
+
+
+.box {
+	width: 31.25%;  /* 200/640 */
+	height: 195px;	
+	margin: 1.04166667%;
+	float: left;
+}
+
+
+#about-me {
+	text-align: center;
+	font-size: 1.15em;
+	overflow: hidden;
+	background-color: rgba(116,123,130,0.25);
+	margin: 1.04166667%;
+
+
+}
+
+#about-me img {
+	width: 200px /* 39.0625% */; /* 125/320 */
+	margin: 10px;
+	float: left;
+}
+
+#about-text {
+	background-color: transparent;
+	color: #ffffff;
+	padding: 10px;
+	text-align: justify;
+	
+}
+
+header {
+	height: 30px;
+}
+
+header img {
+	height: 20px;
+	padding-top: 5px;
+	padding-left: 10px;
+}
+
+
+h1 {
+	height: 20px;
+	font-size: 1.25em;
+}
+
+}
+
+/* 960 */
+
+@media (min-width: 960px) {
+
+
+header {
+	height: 40px;
+}
+
+header img {
+	height: 25px;
+	padding-top: 7.5px;
+	padding-left: 10px;
+}
+
+
+h1 {
+	height: 40px;
+	padding-top: 10px;
+	padding-bottom: 2px;
+	padding-left: 2.08333333%;
+	font-size: 2em;
+}
+
+.box {
+	width: 20.83333333%;  /* 200/960 */
+	margin: 2.08333333%;
+}
+
+
+#about-me {
+	margin: 2.08333333%;
+	font-size: 1.5em;
+
+}
+
+#banner img {
+	width: 350px;
+}
+
+}
+
+
+/* 1024 */
+
+
+@media (min-width: 1024px) {
+
+#container {
+/* 	width: 1020px; */
+}
+
+.box {
+	width: 19.53125%%;  /* 200/1024 */
+	margin: 2.734375%;
+}
+
+
+#about-me {
+
+	margin: 2.734375%;
+}
+
+}
